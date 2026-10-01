@@ -98,3 +98,9 @@ input[type="radio"] {
     font-size: 1.4rem;
     box-shadow: 0 0 10px rgb(38, 146, 189);
 }
+
+/** CONTAINER MARGIN **/
+
+.container-margin {
+    margin: 20px;
+}
