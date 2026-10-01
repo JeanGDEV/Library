@@ -13,3 +13,21 @@ h1 {
     font-size: 3rem;
     color: white;
 }
+
+
+.book-btn {
+    font-size: 1.7rem;
+    background: skyblue;
+    border: none;
+    border-radius: 12px;
+    padding: 9px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s, color 0.3s, font-size 0.3s;
+}
+
+.book-btn:hover {
+    box-shadow: 0 0 10px rgb(38, 146, 189);
+    color: white;
+    font-size: 1.8rem;
+}
