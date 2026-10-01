@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+    background: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
