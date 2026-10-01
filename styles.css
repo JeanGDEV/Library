@@ -104,3 +104,8 @@ input[type="radio"] {
 .container-margin {
     margin: 20px;
 }
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+}
