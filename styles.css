@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100vh;
     font-family: monospace;
     background: #333;
 }
@@ -30,4 +31,66 @@ h1 {
     box-shadow: 0 0 10px rgb(38, 146, 189);
     color: white;
     font-size: 1.8rem;
+}
+
+/** DIALOG SECTION **/
+
+dialog {
+    margin: auto;
+}
+
+dialog > h2 {
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+} 
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    widtH: 100%;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+input[type="radio"] {
+    transform: scale(1.7);
+}
+
+.read-book > label:first-child {
+    margin-right: 20px;
+}
+
+.form-buttons {
+    margin-left: auto;
+}
+
+.form-buttons > button {
+    font-size: 1.3rem;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: color 0.3s, font-size 0.3s, box-shadow 0.3s;
+}
+
+.form-buttons > button:hover {
+    color: white;
+    font-size: 1.4rem;
+    box-shadow: 0 0 10px rgb(38, 146, 189);
 }
