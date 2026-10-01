@@ -39,6 +39,10 @@ dialog {
     margin: auto;
 }
 
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.486);
+}
+
 dialog > h2 {
     font-size: 3rem;
 }
