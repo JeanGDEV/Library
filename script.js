@@ -38,29 +38,42 @@ function renderLibrary() {
 }
 
 function renderBook(book){
+    // Card Element
     const card = document.createElement("div")
+    card.classList.add("card")
 
     // Title Element
     const titleCard = document.createElement("h2")
+    titleCard.classList.add("card-title")
     titleCard.textContent = book.title
 
+    // Author Element
     const authorCard = document.createElement("h3")
+    authorCard.classList.add("card-author")
     authorCard.textContent = book.author
 
+    // Pages Element
     const pagesCard = document.createElement("p")
+    pagesCard.classList.add("card-pages")
     pagesCard.textContent = book.pages
 
+    // Status Button
     const statusButtonCard = document.createElement("button")
+    statusButtonCard.classList.add("status-btn")
     statusButtonCard.textContent = "Toggle Read"
     statusButtonCard.addEventListener("click", () => {
         book.isRead = !book.isRead
         renderLibrary()
     })
 
+    // Status Element
     const statusCard = document.createElement("span")
+    statusCard.classList.add("status-span")
     statusCard.textContent = book.isRead ? "Read" : "Not read"
 
+    // Delete Button
     const deleteButton = document.createElement("button")
+    deleteButton.classList.add("delete-btn")
     deleteButton.textContent = "Remove"
 
     deleteButton.addEventListener("click", (event) => {
