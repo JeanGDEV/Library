@@ -55,7 +55,7 @@ function renderBook(book){
     // Pages Element
     const pagesCard = document.createElement("p")
     pagesCard.classList.add("card-pages")
-    pagesCard.textContent = book.pages
+    pagesCard.textContent = `Pages ${book.pages}`
 
     // Status Button
     const statusButtonCard = document.createElement("button")
