@@ -11,14 +11,10 @@
     <div class="container-margin">
         <button class="book-btn" onclick="openModal()">Add Book</button>
         <div class="grid-container">
-            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat excepturi quas harum obcaecati cum! Temporibus dicta est quia optio. Aut dolor aliquid maxime veniam deleniti sequi doloremque fuga quod optio.</div>
-            <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit in iste provident architecto maxime vel nemo animi eius inventore dignissimos earum, non necessitatibus optio ipsam nihil consequuntur incidunt ea accusantium!</div>
-            <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit in iste provident architecto maxime vel nemo animi eius inventore dignissimos earum, non necessitatibus optio ipsam nihil consequuntur incidunt ea accusantium!</div>
-            <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit in iste provident architecto maxime vel nemo animi eius inventore dignissimos earum, non necessitatibus optio ipsam nihil consequuntur incidunt ea accusantium!</div>
-            <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit in iste provident architecto maxime vel nemo animi eius inventore dignissimos earum, non necessitatibus optio ipsam nihil consequuntur incidunt ea accusantium!</div>
+            
         </div>
     </div>
-    <dialog open="">
+    <dialog>
         <h2>Adding Book...</h2>
         <form action="#" method="post">
             <div class="title-book">
@@ -34,20 +30,13 @@
                 <input type="text" id="pages" name="pages-book">
             </div>
             <div class="read-book">
-                <label>Was it read?</label>
-                <label>
-                    <input type="radio" name="read" value="yes">
-                    Yes
-                </label>
-                <label>
-                    <input type="radio" name="read" value="no">
-                    No
-                </label>
+                <label for="read">Was it read?</label>
+                <input type="checkbox" name="read-book" id="read">
             </div>
             <div class="form-buttons">
                 <button type="button" onclick="closeModal()">Cancel</button>
                 <button type="reset">Reset</button>
-                <button type="submit">Add</button>
+                <button type="submit" id="submit-btn">Add</button>
             </div>
         </form>
     </dialog>
