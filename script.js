@@ -22,6 +22,10 @@ class Book{
         this.isRead = isRead
         this.id = crypto.randomUUID()
     }
+
+    toggleRead(){
+        this.isRead = !this.isRead
+    }
 }
 
 
@@ -64,7 +68,7 @@ function renderBook(book){
     statusButtonCard.classList.add("status-btn")
     statusButtonCard.textContent = "Toggle Read"
     statusButtonCard.addEventListener("click", () => {
-        book.isRead = !book.isRead
+        book.toggleRead()
         renderLibrary()
     })
 
