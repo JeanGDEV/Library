@@ -14,12 +14,14 @@ const readBook = document.querySelector("#read")
 
 const submitBtn = document.querySelector("#submit-btn")
 
-function Book(title, author, pages, isRead){
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.isRead = isRead
-    this.id = crypto.randomUUID()
+class Book{
+    constructor(title, author, pages, isRead) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.isRead = isRead
+        this.id = crypto.randomUUID()
+    }
 }
 
 
